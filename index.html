@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Awais — CS Student & Software Developer</title>
+    <meta name="description"
+        content="Portfolio of Muhammad Awais — Computer Science student, Flutter & Python developer building mobile apps, web applications, and AI-powered solutions.">
+    <meta name="keywords"
+        content="Muhammad Awais, Flutter Developer, Python Developer, Portfolio, Software Engineer, AI, Machine Learning">
+    <meta name="author" content="Muhammad Awais">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="/favicon.jfif">
+</head>
+
+<body>
+    <!-- Cursor Glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>AWAIS<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="grid-overlay"></div>
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge" data-animate="fade-up">
+                    <span class="badge-dot"></span>
+                    Available for opportunities
+                </div>
+                <p class="hero-greeting" data-animate="fade-up" data-delay="100">Hi, I'm Muhammad Awais 👋</p>
+                <h1 class="hero-title" data-animate="fade-up" data-delay="200">
+                    Computer Science<br>
+                    Student & <span class="gradient-text">Software Developer</span>
+                </h1>
+                <p class="hero-description" data-animate="fade-up" data-delay="300">
+                    I build mobile applications, web applications, Python software, and AI-powered solutions.
+                    Currently pursuing BS Computer Science at HITEC University while turning ideas into functional
+                    software.
+                </p>
+                <div class="hero-stack" data-animate="fade-up" data-delay="400">
+                    <span class="stack-tag">Flutter</span>
+                    <span class="stack-dot">•</span>
+                    <span class="stack-tag">Python</span>
+                    <span class="stack-dot">•</span>
+                    <span class="stack-tag">AI</span>
+                    <span class="stack-dot">•</span>
+                    <span class="stack-tag">REST APIs</span>
+                    <span class="stack-dot">•</span>
+                    <span class="stack-tag">C++</span>
+                </div>
+                <div class="hero-actions" data-animate="fade-up" data-delay="500">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i> View Projects
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i> Contact Me
+                    </a>
+                </div>
+                <div class="hero-socials" data-animate="fade-up" data-delay="600">
+                    <a href="https://github.com/Haunted-Rabbit" target="_blank" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/muhammad-awais-py-dev/" target="_blank" class="social-link"
+                        aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://leetcode.com/u/awais64/" target="_blank" class="social-link" aria-label="LeetCode">
+                        <i class="fas fa-code"></i>
+                    </a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=m.awais9003664@gmail.com" target="_blank"
+                        class="social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual" data-animate="fade-left" data-delay="300">
+                <div class="code-window">
+                    <div class="code-header">
+                        <div class="code-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="code-title">awais.py</span>
+                    </div>
+                    <div class="code-body">
+                        <pre><code><span class="code-keyword">class</span> <span class="code-class">Developer</span>:
+    <span class="code-keyword">def</span> <span class="code-func">__init__</span>(<span class="code-param">self</span>):
+        <span class="code-param">self</span>.name = <span class="code-string">"Muhammad Awais"</span>
+        <span class="code-param">self</span>.role = <span class="code-string">"CS Student"</span>
+        <span class="code-param">self</span>.skills = [
+            <span class="code-string">"Flutter"</span>, <span class="code-string">"Python"</span>,
+            <span class="code-string">"C++"</span>, <span class="code-string">"AI/ML"</span>,
+            <span class="code-string">"REST APIs"</span>
+        ]
+        <span class="code-param">self</span>.passion = <span class="code-string">"Building things"</span>
+    
+    <span class="code-keyword">def</span> <span class="code-func">get_status</span>(<span class="code-param">self</span>):
+        <span class="code-keyword">return</span> <span class="code-string">"Building something cool 🚀"</span></code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator" data-animate="fade-up" data-delay="800">
+            <div class="mouse">
+                <div class="mouse-wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Get To Know Me</span>
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-content" data-animate="fade-right">
+                    <p class="about-text">
+                        I'm a Computer Science student at <strong>HITEC University, Taxila</strong>, with a strong
+                        interest in software development,
+                        mobile applications, Python, and Artificial Intelligence.
+                    </p>
+                    <p class="about-text">
+                        Throughout my degree, I've worked on projects ranging from <strong>Flutter mobile
+                            applications</strong> and
+                        <strong>API-based systems</strong> to <strong>Python desktop applications</strong>, <strong>AI
+                            projects</strong>,
+                        and <strong>C++ data-structure-based applications</strong>.
+                    </p>
+                    <p class="about-text">
+                        I enjoy taking an idea, breaking it into smaller problems, and turning it into a working
+                        application.
+                        I'm particularly interested in building practical software that combines good user interfaces
+                        with useful functionality.
+                    </p>
+                    <p class="about-text">
+                        Alongside academics, I participate in programming competitions and continuously practice Data
+                        Structures
+                        and Algorithms to improve my problem-solving skills.
+                    </p>
+                </div>
+                <div class="about-stats" data-animate="fade-left">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-value">3.53</span>
+                            <span class="stat-label">CGPA / 4.00</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-mobile-alt"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-value">Flutter</span>
+                            <span class="stat-label">Mobile Developer</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fab fa-python"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-value">Python</span>
+                            <span class="stat-label">Software Developer</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-robot"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-value">AI/ML</span>
+                            <span class="stat-label">Enthusiast</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-laptop-code"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-value">9+</span>
+                            <span class="stat-label">Projects Built</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-trophy"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-value">5+</span>
+                            <span class="stat-label">Competitions</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">What I Work With</span>
+                <h2 class="section-title">Tech <span class="gradient-text">Stack</span></h2>
+            </div>
+
+            <!-- Skill Levels -->
+            <div class="skill-levels" data-animate="fade-up">
+                <div class="skill-level-card level-strong">
+                    <div class="level-header">
+                        <div class="level-indicator">
+                            <span class="level-dot active"></span>
+                            <span class="level-dot active"></span>
+                            <span class="level-dot active"></span>
+                        </div>
+                        <h3 class="level-title">Strong</h3>
+                    </div>
+                    <div class="level-skills">
+                        <span class="skill-chip"><i class="fab fa-flutter"></i> Flutter</span>
+                        <span class="skill-chip"><i class="fas fa-code"></i> Dart</span>
+                        <span class="skill-chip"><i class="fab fa-python"></i> Python</span>
+                        <span class="skill-chip"><i class="fas fa-project-diagram"></i> OOP</span>
+                        <span class="skill-chip"><i class="fas fa-sitemap"></i> DSA</span>
+                    </div>
+                </div>
+                <div class="skill-level-card level-comfortable">
+                    <div class="level-header">
+                        <div class="level-indicator">
+                            <span class="level-dot active"></span>
+                            <span class="level-dot active"></span>
+                            <span class="level-dot"></span>
+                        </div>
+                        <h3 class="level-title">Comfortable</h3>
+                    </div>
+                    <div class="level-skills">
+                        <span class="skill-chip"><i class="fas fa-fire"></i> Firebase</span>
+                        <span class="skill-chip"><i class="fas fa-plug"></i> REST APIs</span>
+                        <span class="skill-chip"><i class="fab fa-git-alt"></i> Git/GitHub</span>
+                        <span class="skill-chip"><i class="fas fa-code"></i> C++</span>
+                        <span class="skill-chip"><i class="fab fa-java"></i> Java</span>
+                        <span class="skill-chip"><i class="fas fa-database"></i> SQL</span>
+                        <span class="skill-chip"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="skill-chip"><i class="fab fa-html5"></i> HTML/CSS</span>
+                    </div>
+                </div>
+                <div class="skill-level-card level-exploring">
+                    <div class="level-header">
+                        <div class="level-indicator">
+                            <span class="level-dot active"></span>
+                            <span class="level-dot"></span>
+                            <span class="level-dot"></span>
+                        </div>
+                        <h3 class="level-title">Exploring</h3>
+                    </div>
+                    <div class="level-skills">
+                        <span class="skill-chip"><i class="fas fa-brain"></i> Machine Learning</span>
+                        <span class="skill-chip"><i class="fas fa-network-wired"></i> TensorFlow</span>
+                        <span class="skill-chip"><i class="fas fa-robot"></i> Deep Learning</span>
+                        <span class="skill-chip"><i class="fas fa-flask"></i> Flask</span>
+                        <span class="skill-chip"><i class="fab fa-react"></i> React.js</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tech Categories -->
+            <div class="tech-grid" data-animate="fade-up" data-delay="200">
+                <div class="tech-category">
+                    <h3 class="tech-category-title"><i class="fas fa-terminal"></i> Languages</h3>
+                    <div class="tech-list">
+                        <div class="tech-item"><span class="tech-name">Python</span></div>
+                        <div class="tech-item"><span class="tech-name">Dart</span></div>
+                        <div class="tech-item"><span class="tech-name">C++</span></div>
+                        <div class="tech-item"><span class="tech-name">Java</span></div>
+                        <div class="tech-item"><span class="tech-name">JavaScript</span></div>
+                        <div class="tech-item"><span class="tech-name">SQL</span></div>
+                        <div class="tech-item"><span class="tech-name">HTML/CSS</span></div>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3 class="tech-category-title"><i class="fas fa-layer-group"></i> Frameworks</h3>
+                    <div class="tech-list">
+                        <div class="tech-item"><span class="tech-name">Flutter</span></div>
+                        <div class="tech-item"><span class="tech-name">Firebase</span></div>
+                        <div class="tech-item"><span class="tech-name">Flask</span></div>
+                        <div class="tech-item"><span class="tech-name">React.js</span></div>
+                        <div class="tech-item"><span class="tech-name">Tkinter</span></div>
+                        <div class="tech-item"><span class="tech-name">Android</span></div>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3 class="tech-category-title"><i class="fas fa-database"></i> Databases</h3>
+                    <div class="tech-list">
+                        <div class="tech-item"><span class="tech-name">Firebase</span></div>
+                        <div class="tech-item"><span class="tech-name">MySQL</span></div>
+                        <div class="tech-item"><span class="tech-name">SQLite</span></div>
+                        <div class="tech-item"><span class="tech-name">SQLAlchemy</span></div>
+                        <div class="tech-item"><span class="tech-name">CSV Storage</span></div>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3 class="tech-category-title"><i class="fas fa-brain"></i> AI / Data</h3>
+                    <div class="tech-list">
+                        <div class="tech-item"><span class="tech-name">NumPy</span></div>
+                        <div class="tech-item"><span class="tech-name">Pandas</span></div>
+                        <div class="tech-item"><span class="tech-name">Matplotlib</span></div>
+                        <div class="tech-item"><span class="tech-name">Scikit-learn</span></div>
+                        <div class="tech-item"><span class="tech-name">TensorFlow</span></div>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3 class="tech-category-title"><i class="fas fa-tools"></i> Tools</h3>
+                    <div class="tech-list">
+                        <div class="tech-item"><span class="tech-name">Git & GitHub</span></div>
+                        <div class="tech-item"><span class="tech-name">VS Code</span></div>
+                        <div class="tech-item"><span class="tech-name">Android Studio</span></div>
+                        <div class="tech-item"><span class="tech-name">IntelliJ</span></div>
+                        <div class="tech-item"><span class="tech-name">Linux/Ubuntu</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">What I've Built</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <p class="section-subtitle">A selection of projects showcasing my skills across mobile, web, desktop,
+                    and AI development.</p>
+            </div>
+
+            <!-- Project Filters -->
+            <div class="project-filters" data-animate="fade-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="flutter">Flutter</button>
+                <button class="filter-btn" data-filter="python">Python</button>
+                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+                <button class="filter-btn" data-filter="cpp">C++</button>
+                <button class="filter-btn" data-filter="ai">AI / ML</button>
+            </div>
+
+            <!-- Featured Project: NeuroTwin AI -->
+            <div class="featured-project" data-animate="fade-up" data-category="ai">
+                <div class="featured-badge">
+                    <i class="fas fa-star"></i> Final Year Project
+                </div>
+                <div class="featured-content">
+                    <div class="featured-info">
+                        <h3 class="featured-title">NeuroTwin AI</h3>
+                        <p class="featured-tagline">Digital Twin + Cognitive AI Student System</p>
+                        <p class="featured-desc">
+                            A cognitive digital twin system designed to create a digital representation of a student's
+                            academic
+                            and behavioral patterns. It models study habits, productivity, academic performance,
+                            stress/fatigue patterns,
+                            and learning behavior to provide personalized insights and what-if simulations.
+                        </p>
+                        <div class="featured-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-brain"></i>
+                                <span>Cognitive Modeling</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Performance Prediction</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-flask"></i>
+                                <span>What-If Simulation</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Study Recommendations</span>
+                            </div>
+                        </div>
+                        <div class="featured-tags">
+                            <span>Python</span>
+                            <span>AI/ML</span>
+                            <span>TensorFlow</span>
+                            <span>Digital Twin</span>
+                            <span>Data Analytics</span>
+                        </div>
+                    </div>
+                    <div class="featured-visual">
+                        <div class="neurotwin-viz">
+                            <div class="viz-ring ring-1">
+                                <div class="viz-node"><i class="fas fa-book"></i></div>
+                            </div>
+                            <div class="viz-ring ring-2">
+                                <div class="viz-node"><i class="fas fa-chart-bar"></i></div>
+                            </div>
+                            <div class="viz-ring ring-3">
+                                <div class="viz-node"><i class="fas fa-brain"></i></div>
+                            </div>
+                            <div class="viz-center">
+                                <i class="fas fa-user-graduate"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Grid -->
+            <div class="project-grid">
+
+                <!-- Finance Tracker -->
+                <div class="project-card" data-animate="fade-up" data-category="flutter">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-wallet"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/Haunted-Rabbit" target="_blank" class="project-link-icon"
+                                aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Finance Tracker</h3>
+                    <p class="project-desc">Personal finance management app for tracking income, expenses, budgets, and
+                        financial records with Firebase backend.</p>
+                    <ul class="project-features">
+                        <li>User registration & login</li>
+                        <li>Income & expense tracking</li>
+                        <li>Budget management & dashboard</li>
+                        <li>Firebase authentication</li>
+                        <li>Provider state management</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span>Flutter</span>
+                        <span>Dart</span>
+                        <span>Firebase</span>
+                        <span>Provider</span>
+                    </div>
+                </div>
+
+                <!-- LearnNest -->
+                <div class="project-card" data-animate="fade-up" data-delay="100" data-category="flutter">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-book-open"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/Haunted-Rabbit" target="_blank" class="project-link-icon"
+                                aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">LearnNest — LMS</h3>
+                    <p class="project-desc">A Flutter-based Learning Management System providing organized access to
+                        educational content including videos, PDFs, and quizzes.</p>
+                    <ul class="project-features">
+                        <li>Video lectures & PDF resources</li>
+                        <li>Quiz system</li>
+                        <li>Course content organization</li>
+                        <li>Session management</li>
+                        <li>Responsive UI</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span>Flutter</span>
+                        <span>Dart</span>
+                        <span>Firebase</span>
+                        <span>SharedPreferences</span>
+                    </div>
+                </div>
+
+                <!-- Smart Priority Study Planner -->
+                <div class="project-card" data-animate="fade-up" data-delay="200" data-category="fullstack">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-tasks"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/Haunted-Rabbit" target="_blank" class="project-link-icon"
+                                aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Smart Study Planner</h3>
+                    <p class="project-desc">Full-stack study planner with React frontend, Flask backend, and MySQL
+                        database. Features priority-based task management and secure authentication.</p>
+                    <ul class="project-features">
+                        <li>React.js + Hooks frontend</li>
+                        <li>Flask RESTful API backend</li>
+                        <li>MySQL + SQLAlchemy ORM</li>
+                        <li>Bcrypt password hashing</li>
+                        <li>CORS & JWT security</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span>React.js</span>
+                        <span>Flask</span>
+                        <span>MySQL</span>
+                        <span>REST API</span>
+                    </div>
+                </div>
+
+                <!-- Flutter API Auth -->
+                <div class="project-card" data-animate="fade-up" data-category="flutter">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-shield-alt"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/Haunted-Rabbit" target="_blank" class="project-link-icon"
+                                aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">API Auth & Dashboard</h3>
+                    <p class="project-desc">Flutter application integrating with backend APIs to authenticate users and
+                        display dynamic dashboard information.</p>
+                    <ul class="project-features">
+                        <li>API authentication flow</li>
+                        <li>JSON response handling</li>
+                        <li>Dashboard with live data</li>
+                        <li>Request signatures</li>
+                        <li>Error handling & navigation</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span>Flutter</span>
+                        <span>REST API</span>
+                        <span>JSON</span>
+                        <span>Auth</span>
+                    </div>
+                </div>
+
+                <!-- Adaptive Quiz Generator -->
+                <div class="project-card" data-animate="fade-up" data-delay="100" data-category="python ai">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-question-circle"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/Haunted-Rabbit" target="_blank" class="project-link-icon"
+                                aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Adaptive Quiz Generator</h3>
+                    <p class="project-desc">AI-based quiz system that dynamically adjusts question difficulty based on
+                        user performance using adaptive algorithms.</p>
+                    <ul class="project-features">
+                        <li>Adaptive difficulty scaling</li>
+                        <li>User profiles & score tracking</li>
+                        <li>Performance analytics</li>
+                        <li>CSV-based data storage</li>
+                        <li>Tkinter GUI</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Tkinter</span>
+                        <span>Pandas</span>
+                        <span>AI</span>
+                    </div>
+                </div>
+
+                <!-- Tic Tac Toe -->
+                <div class="project-card" data-animate="fade-up" data-delay="200" data-category="python ai">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-gamepad"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/Haunted-Rabbit" target="_blank" class="project-link-icon"
+                                aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Tic Tac Toe AI</h3>
+                    <p class="project-desc">GUI-based Tic Tac Toe game with an unbeatable AI opponent powered by the
+                        Minimax algorithm.</p>
+                    <ul class="project-features">
+                        <li>Minimax algorithm AI</li>
+                        <li>Game-state evaluation</li>
+                        <li>Human vs AI gameplay</li>
+                        <li>Win/draw detection</li>
+                        <li>Intuitive GUI interface</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Tkinter</span>
+                        <span>Minimax</span>
+                    </div>
+                </div>
+
+                <!-- Verification App -->
+                <div class="project-card" data-animate="fade-up" data-category="flutter">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-id-card"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/Haunted-Rabbit" target="_blank" class="project-link-icon"
+                                aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Document Verification App</h3>
+                    <p class="project-desc">Flutter verification app for document capture and submission with multi-step
+                        workflows and cloud integration.</p>
+                    <ul class="project-features">
+                        <li>Multi-step verification</li>
+                        <li>Document/ID capture</li>
+                        <li>Base64 image processing</li>
+                        <li>Backend API integration</li>
+                        <li>Cloud storage</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span>Flutter</span>
+                        <span>Firebase</span>
+                        <span>Supabase</span>
+                        <span>APIs</span>
+                    </div>
+                </div>
+
+                <!-- Instagram CLI -->
+                <div class="project-card" data-animate="fade-up" data-delay="100" data-category="cpp">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fab fa-instagram"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/Haunted-Rabbit" target="_blank" class="project-link-icon"
+                                aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Instagram CLI App</h3>
+                    <p class="project-desc">Command-line social media application simulating core Instagram features
+                        using C++ and data structures.</p>
+                    <ul class="project-features">
+                        <li>User accounts & profiles</li>
+                        <li>Posts & interactions</li>
+                        <li>Linked lists & arrays</li>
+                        <li>OOP architecture</li>
+                        <li>Data structure management</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span>C++</span>
+                        <span>OOP</span>
+                        <span>DSA</span>
+                    </div>
+                </div>
+
+                <!-- LMS Java -->
+                <div class="project-card" data-animate="fade-up" data-delay="200" data-category="cpp">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fab fa-android"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/Haunted-Rabbit" target="_blank" class="project-link-icon"
+                                aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Android LMS</h3>
+                    <p class="project-desc">University mobile application implementing LMS-style system for organizing
+                        educational content in native Android.</p>
+                    <ul class="project-features">
+                        <li>Android UI & navigation</li>
+                        <li>Java & XML layouts</li>
+                        <li>Educational content</li>
+                        <li>User interaction</li>
+                        <li>Native Android development</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span>Java</span>
+                        <span>Android</span>
+                        <span>XML</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section section-alt" id="experience">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Professional Journey</span>
+                <h2 class="section-title">Experience & <span class="gradient-text">Education</span></h2>
+            </div>
+            <div class="timeline">
+                <!-- Experience -->
+                <div class="timeline-item" data-animate="fade-right">
+                    <div class="timeline-marker">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge">Current</div>
+                        <h3 class="timeline-title">Flutter Developer Intern</h3>
+                        <p class="timeline-company">Soft Tech Media</p>
+                        <span class="timeline-date"><i class="far fa-calendar-alt"></i> May 2026 – Present</span>
+                        <ul class="timeline-details">
+                            <li>Developing a finance tracker app in Flutter, handling UI implementation and core app
+                                logic</li>
+                            <li>Performing QA testing across multiple company apps, identifying and reporting bugs</li>
+                            <li>Collaborating with the development team to test features and refine app functionality
+                                before release</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Education -->
+                <div class="timeline-item" data-animate="fade-left">
+                    <div class="timeline-marker">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">BS in Computer Science</h3>
+                        <p class="timeline-company">HITEC University, Taxila</p>
+                        <span class="timeline-date"><i class="far fa-calendar-alt"></i> Expected Graduation: August
+                            2027</span>
+                        <p class="timeline-gpa"><strong>CGPA: 3.53 / 4.00</strong></p>
+                        <div class="coursework-grid">
+                            <span class="coursework-tag">Data Structures & Algorithms</span>
+                            <span class="coursework-tag">Object-Oriented Programming</span>
+                            <span class="coursework-tag">Mobile App Development</span>
+                            <span class="coursework-tag">Artificial Intelligence</span>
+                            <span class="coursework-tag">Web Development</span>
+                            <span class="coursework-tag">Database Systems</span>
+                            <span class="coursework-tag">Operating Systems</span>
+                            <span class="coursework-tag">Computer Architecture</span>
+                            <span class="coursework-tag">Assembly Language</span>
+                            <span class="coursework-tag">Linear Algebra</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Content Creation -->
+                <div class="timeline-item" data-animate="fade-right">
+                    <div class="timeline-marker">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Content Creation</h3>
+                        <p class="timeline-company">Technical Content Creator</p>
+                        <span class="timeline-date"><i class="far fa-calendar-alt"></i> 2025 – 2026</span>
+                        <ul class="timeline-details">
+                            <li>Creating educational and development-related content</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="section" id="achievements">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Competitions & Problem Solving</span>
+                <h2 class="section-title">Achievements & <span class="gradient-text">Activities</span></h2>
+            </div>
+            <div class="achievements-grid">
+                <div class="achievement-card" data-animate="fade-up">
+                    <div class="achievement-icon"><i class="fab fa-meta"></i></div>
+                    <h3 class="achievement-title">Meta Hacker Cup</h3>
+                    <p class="achievement-subtitle">Human Track Participant</p>
+                    <p class="achievement-desc">Participated in the international programming competition and
+                        successfully solved problems within the competition timeframe.</p>
+                </div>
+                <div class="achievement-card" data-animate="fade-up" data-delay="100">
+                    <div class="achievement-icon"><i class="fas fa-university"></i></div>
+                    <h3 class="achievement-title">CALICO Fall '25</h3>
+                    <p class="achievement-subtitle">UC Berkeley</p>
+                    <p class="achievement-desc">Participated in CALICO Fall '25, a competitive programming competition
+                        organized by UC Berkeley.</p>
+                </div>
+                <div class="achievement-card" data-animate="fade-up" data-delay="200">
+                    <div class="achievement-icon"><i class="fas fa-code"></i></div>
+                    <h3 class="achievement-title">CodeWars</h3>
+                    <p class="achievement-subtitle">HITEC University</p>
+                    <p class="achievement-desc">Participated in the CodeWars programming competition at HITEC
+                        University, competing against fellow CS students.</p>
+                </div>
+                <div class="achievement-card" data-animate="fade-up">
+                    <div class="achievement-icon"><i class="fas fa-robot"></i></div>
+                    <h3 class="achievement-title">AI Factory Hackathon</h3>
+                    <p class="achievement-subtitle">AgentForge AI</p>
+                    <p class="achievement-desc">Developed an AI-powered Contract & Vendor Risk Assessment solution as
+                        part of a 6-member team.</p>
+                </div>
+                <div class="achievement-card" data-animate="fade-up" data-delay="100">
+                    <div class="achievement-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3 class="achievement-title">HIBIS</h3>
+                    <p class="achievement-subtitle">HITEC University</p>
+                    <p class="achievement-desc">Participated in HIBIS activities and events at HITEC University.</p>
+                </div>
+                <div class="achievement-card" data-animate="fade-up" data-delay="200">
+                    <div class="achievement-icon"><i class="fas fa-fire"></i></div>
+                    <h3 class="achievement-title">LeetCode</h3>
+                    <p class="achievement-subtitle">40+ Problems Solved</p>
+                    <p class="achievement-desc">Consistently practicing Data Structures and Algorithms, solving 40+
+                        problems to sharpen problem-solving skills.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section section-alt" id="services">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">How I Can Help</span>
+                <h2 class="section-title">What I Can <span class="gradient-text">Build</span></h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-animate="fade-up">
+                    <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3 class="service-title">Mobile Applications</h3>
+                    <p class="service-desc">Cross-platform mobile applications using Flutter with modern UI,
+                        authentication, APIs, Firebase, and local storage.</p>
+                </div>
+                <div class="service-card" data-animate="fade-up" data-delay="100">
+                    <div class="service-icon"><i class="fas fa-globe"></i></div>
+                    <h3 class="service-title">Web Applications</h3>
+                    <p class="service-desc">Responsive websites and web applications with API integration and modern
+                        frontend development.</p>
+                </div>
+                <div class="service-card" data-animate="fade-up" data-delay="200">
+                    <div class="service-icon"><i class="fab fa-python"></i></div>
+                    <h3 class="service-title">Python Applications</h3>
+                    <p class="service-desc">Desktop applications, automation tools, data-processing applications, and
+                        GUI software using Python.</p>
+                </div>
+                <div class="service-card" data-animate="fade-up" data-delay="300">
+                    <div class="service-icon"><i class="fas fa-plug"></i></div>
+                    <h3 class="service-title">API Integration</h3>
+                    <p class="service-desc">Connecting applications with REST APIs, handling JSON responses,
+                        authentication, and backend data flows.</p>
+                </div>
+                <div class="service-card" data-animate="fade-up" data-delay="400">
+                    <div class="service-icon"><i class="fas fa-robot"></i></div>
+                    <h3 class="service-title">AI Applications</h3>
+                    <p class="service-desc">Practical AI/ML applications and intelligent features using Python and
+                        machine-learning technologies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Let's Build <span class="gradient-text">Something</span></h2>
+                <p class="section-subtitle">Have an idea for an application or need help with an existing project? I'm
+                    always interested in working on interesting software projects.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info" data-animate="fade-right">
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-detail">
+                            <h4>Email</h4>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=m.awais9003664@gmail.com"
+                                target="_blank">m.awais9003664@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div class="contact-detail">
+                            <h4>Phone</h4>
+                            <a href="tel:+923225050220">+92 322 5050220</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-detail">
+                            <h4>Location</h4>
+                            <span>Taxila, Pakistan</span>
+                        </div>
+                    </div>
+                    <div class="contact-socials">
+                        <a href="https://github.com/Haunted-Rabbit" target="_blank" class="contact-social-link">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/muhammad-awais-py-dev/" target="_blank"
+                            class="contact-social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=m.awais9003664@gmail.com" target="_blank"
+                            class="contact-social-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email</span>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" data-animate="fade-left" id="contactForm"
+                    action="https://api.web3forms.com/submit" method="POST">
+                    <!-- Web3Forms config - key injected via JS -->
+                    <input type="hidden" name="access_key" id="w3f_key" value="">
+                    <input type="hidden" name="_subject" value="New Portfolio Contact Message">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_next" value="">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Awais" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="awais@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo">
+                        <span class="logo-bracket">&lt;</span>AWAIS<span class="logo-bracket">/&gt;</span>
+                    </a>
+                    <p class="footer-text">Building software that makes a difference.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigation</h4>
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#projects">Projects</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>More</h4>
+                        <a href="#experience">Experience</a>
+                        <a href="#achievements">Achievements</a>
+                        <a href="#services">Services</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <a href="https://github.com/Haunted-Rabbit" target="_blank">GitHub</a>
+                        <a href="https://www.linkedin.com/in/muhammad-awais-py-dev/" target="_blank">LinkedIn</a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=m.awais9003664@gmail.com"
+                            target="_blank">Email</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Muhammad Awais. Crafted with passion.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
